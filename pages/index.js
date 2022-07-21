@@ -11,7 +11,6 @@ import Footer from '../components/Footer'
 export default function Home() {
   const router = useRouter()
   const searchInputRef = useRef(null)
-  const [searchState, setSearchState] = useState('')
 
   const search = (e) => {
     e.preventDefault()
