@@ -7,7 +7,7 @@ export default function PagenationButtons() {
   const startIndex = Number(router.query.start) || 1
 
   return (
-    <div className='text-blue-700 flex px-9 pb-4 justify-between sm:justify-start sm:space-x-44 sm:p-0'>
+    <div className='text-blue-700 flex px-8 pb-4 justify-between sm:justify-start sm:space-x-44 sm:p-0'>
       {startIndex > 10 && (
         <Link
           href={`/search?term=${router.query.term}&searchType=${
