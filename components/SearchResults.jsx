@@ -1,5 +1,7 @@
 import Parser from 'html-react-parser'
 
+import PagenationButtons from './PagenationButtons'
+
 export default function SearchResults({ results }) {
   return (
     <div className='w-full mx-auto px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52'>
@@ -25,6 +27,7 @@ export default function SearchResults({ results }) {
           <p className='text-gray-600'>{Parser(result.htmlSnippet)}</p>
         </div>
       ))}
+      <PagenationButtons />
     </div>
   )
 }
